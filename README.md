@@ -10,8 +10,8 @@ On the client side you must configure
 # Pre requirments
 It assume that the oracle instant client, pip and java are installed. You can create the container to have anything you need.
 
-#Configuration
-Edit tns/tnsnames.ora to match your database ip and service.
+# Configuration
+Edit tns/tnsnames.ora to match your database ip and service. Generate the wallet files and copy them to tns/wallet.
 
 # Java 
 In order to use wallet you must add to your code the following jars:
@@ -19,6 +19,7 @@ In order to use wallet you must add to your code the following jars:
 * oraclepki.jar
 * osdt_cert.jar
 * osdt_core.jar
+
 You can find them at https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-9-c-downloads.html
 Invoking the wallet on java is done by using 'jdbc:oracle:thin:/@TESTWALLET'
 
@@ -30,14 +31,19 @@ In this case there is a single user on the wallet. In python you invoke the wall
 
 # Build and run the container
 `docker build -t walletcontainer .`
+
 `docker run -it walletcontainer:latest /bin/bash`
 
 # Builiding this
-Run make all. This is done on the container build.
+Run `make all`. This is done on the container build.
 
-# Running the tests
-On the container
-make run-java
-make run-python
-make run-sqlplus
+# Running this
+On the container, execute
+
+`make run-java`
+
+`make run-python`
+
+`make run-sqlplus`
+
 Look at the Makefile to see how it was executed.
