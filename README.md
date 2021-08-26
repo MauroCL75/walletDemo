@@ -14,13 +14,13 @@ It assume that the oracle instant client, pip and java are installed. You can cr
 Edit tns/tnsnames.ora to match your database ip and service. Generate the wallet files and copy them to tns/wallet.
 
 # Java 
-In order to use wallet you must add to your code the following jars:
+In order to use wallet you must add to this code the following jars:
 * ojdbc8.jar
 * oraclepki.jar
 * osdt_cert.jar
 * osdt_core.jar
 
-You can find them at https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-9-c-downloads.html
+You can find them [here](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-9-c-downloads.html).
 Invoking the wallet on java is done by using 'jdbc:oracle:thin:/@TESTWALLET'
 
 # Environment variables
