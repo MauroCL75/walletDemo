@@ -1,41 +1,41 @@
-#Oracle wallet demo
+# Oracle wallet demo
 
 This is a demo of the oracle wallet. You will find here examples in java, python and sqlplus.
 The wallet is a way to store encrypted login and password information. The wallet is generated and distributed by the DBA.
 On the client side you must configure
--An sqlnet.ora file that tells where the file is.
--A tnsname.ora file that tells the ip and service name of the database. The test database in this example is called TESTWALLET.
--A copy of the wallet directory that stores the credentials.
+* An sqlnet.ora file that tells where the file is.
+* A tnsname.ora file that tells the ip and service name of the database. The test database in this example is called TESTWALLET.
+* A copy of the wallet directory that stores the credentials.
 
-#Pre requirments
+# Pre requirments
 It assume that the oracle instant client, pip and java are installed. You can create the container to have anything you need.
 
 #Configuration
 Edit tns/tnsnames.ora to match your database ip and service.
 
-#Java 
+# Java 
 In order to use wallet you must add to your code the following jars:
-*ojdbc8.jar
-*oraclepki.jar
-*osdt_cert.jar
-*osdt_core.jar
+* ojdbc8.jar
+* oraclepki.jar
+* osdt_cert.jar
+* osdt_core.jar
 You can find them at https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-9-c-downloads.html
 Invoking the wallet on java is done by using 'jdbc:oracle:thin:/@TESTWALLET'
 
-#Environment variables
+# Environment variables
 You can add a TNS_ADMIN file to tell where the tnsnames is.
 
-#Invoking a wallet enabled configuration
+# Invoking a wallet enabled configuration
 In this case there is a single user on the wallet. In python you invoke the wallet config by using the dsn TESTWALLET. In sqlplus you must use /@TESTWALLET
 
-#Build and run the container
+# Build and run the container
 `docker build -t walletcontainer .`
 `docker run -it walletcontainer:latest /bin/bash`
 
-#Builiding this
+# Builiding this
 Run make all. This is done on the container build.
 
-#Running the tests
+# Running the tests
 On the container
 make run-java
 make run-python
