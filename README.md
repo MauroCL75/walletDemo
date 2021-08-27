@@ -8,7 +8,8 @@ On the client side you must configure
 * A copy of the wallet directory that stores the credentials.
 
 # Pre requirements
-It assume that the oracle instant client, pip and java are installed. You can create the container to have anything you need.
+It assume that the oracle instant client, pip and java are installed. Ask your local DBA to create a wallet for you.
+You can create the container to have anything you need.
 
 # Configuration
 Edit tns/tnsnames.ora to match your database ip and service. Generate the wallet files and copy them to tns/wallet.
