@@ -7,7 +7,7 @@ On the client side you must configure
 * A tnsname.ora file that tells the ip and service name of the database. The test database in this example is called TESTWALLET.
 * A copy of the wallet directory that stores the credentials.
 
-# Pre requirments
+# Pre requirements
 It assume that the oracle instant client, pip and java are installed. You can create the container to have anything you need.
 
 # Configuration
