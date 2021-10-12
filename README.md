@@ -20,8 +20,10 @@ In order to use wallet you must add to this code the following jars:
 * oraclepki.jar
 * osdt_cert.jar
 * osdt_core.jar
+
 They are downloaded via maven so you must have it first.
 You can also find them [here](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-9-c-downloads.html).
+
 Invoking the wallet on java is done by using 'jdbc:oracle:thin:/@TESTWALLET'
 
 # Environment variables
