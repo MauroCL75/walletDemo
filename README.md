@@ -1,6 +1,6 @@
 # Oracle wallet demo
 
-This is a demo of the oracle wallet. You will find here examples in java, python and sqlplus.
+This is a demo of the oracle wallet usage. You will find here examples in java, python and sqlplus.
 The wallet is a way to store encrypted login and password information. The wallet is generated and distributed by the DBA.
 On the client side you must configure
 * An sqlnet.ora file that tells where the wallet lives.
@@ -8,8 +8,9 @@ On the client side you must configure
 * A copy of the wallet directory that stores the credentials.
 
 # Pre requirements
-It assume that the oracle instant client, pip and java are installed. Ask your local DBA to create a wallet for you.
-You can create the container to have anything you need.
+It assumes that the oracle instant client, pip and java are installed. Ask your local DBA to create a wallet for you.
+You should also might want to copy a running wallet on a tns directory.
+You can use the container to have everything you need, except the wallet.
 
 # Configuration
 Edit tns/tnsnames.ora to match your database ip and service. Generate the wallet files and copy them to tns/wallet.
