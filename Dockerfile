@@ -6,7 +6,7 @@ ARG update=9
 RUN  dnf -y install oracle-release-el8 && \
      dnf -y install oracle-instantclient${release}.${update}-basic oracle-instantclient${release}.${update}-devel oracle-instantclient${release}.${update}-sqlplus 
 
-RUN  dnf -y install python3 python3-pip python3-virtualenv make java-1.8.0-openjdk-headless java-1.8.0-openjdk-devel && \
+RUN  dnf -y install python3 python3-pip python3-virtualenv make java-1.8.0-openjdk-headless java-1.8.0-openjdk-devel maven && \
      rm -rf /var/cache/dnf
 
 
