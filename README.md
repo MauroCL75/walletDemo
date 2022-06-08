@@ -4,7 +4,7 @@ This is a demo of the oracle wallet usage. You will find here examples in java, 
 The wallet is a way to store encrypted login and password information. The wallet is generated and distributed by the DBA.
 On the client side you must configure
 * An sqlnet.ora file that tells where the wallet lives.
-* A tnsname.ora file that tells the ip and service name of the database. The test database in this example is called TESTWALLET.
+* A tnsname.ora file that tells the ip and service name of the database. The test database in this example is called WDEMO2_TESTING.
 * A copy of the wallet directory that stores the credentials.
 
 # Pre requirements
